@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חנות מכונות כביסה</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
+    header {
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; }
+    header p { margin-top: 8px; opacity: 0.9; }
+
+    nav {
+      background: #155db2;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px;
+    }
+    nav a { color: white; text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(135deg, #e8f0fe, #fff);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 { font-size: 1.8rem; margin-bottom: 10px; }
+    .hero p { color: #666; margin-bottom: 20px; }
+    .hero button {
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .hero button:hover { background: #155db2; }
+
+    .products {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: #e0e0e0;
+    }
+    .card-body { padding: 16px; }
+    .card-body h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .card-body p { color: #666; font-size: 0.9rem; margin-bottom: 12px; }
+    .price { font-size: 1.3rem; color: #1a73e8; font-weight: bold; margin-bottom: 12px; }
+    .card-body button {
+      width: 100%;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .card-body button:hover { background: #155db2; }
+
+    footer {
+      background: #333;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🫧 חנות מכונות כביסה</h1>
+  <p>המחירים הטובים ביותר, המותגים המובילים</p>
+</header>
+
+<nav>
+  <a href="#">ראשי</a>
+  <a href="#">מוצרים</a>
+  <a href="#">מבצעים</a>
+  <a href="#">צור קשר</a>
+</nav>
+
+<div class="hero">
+  <h2>מכונת הכביסה המושלמת לביתך</h2>
+  <p>בחירה רחבה, משלוח חינם, אחריות 3 שנים</p>
+  <button>לכל המוצרים</button>
+</div>
+
+<div class="products">
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>Samsung WW90T</h3>
+      <p>9 ק"ג, 1400 סל"ד, A+++, פונקציית קיטור</p>
+      <div class="price">₪2,490</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>LG F4WV709S1E</h3>
+      <p>9 ק"ג, 1400 סל"ד, A+++, TurboWash</p>
+      <div class="price">₪2,890</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>Bosch WAN28201IL</h3>
+      <p>8 ק"ג, 1400 סל"ד, A+++, שקטה במיוחד</p>
+      <div class="price">₪2,190</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>Electrolux EW6F4142FB</h3>
+      <p>10 ק"ג, 1400 סל"ד, A+++, UltraMix</p>
+      <div class="price">₪3,190</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>Whirlpool FSCR10432</h3>
+      <p>10 ק"ג, 1400 סל"ד, A+++, FreshCare+</p>
+      <div class="price">₪2,750</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="height:200px;background:#dde;display:flex;align-items:center;justify-content:center;font-size:4rem;">🫧</div>
+    <div class="card-body">
+      <h3>Candy CS 1482DE</h3>
+      <p>8 ק"ג, 1400 סל"ד, A++, WiFi</p>
+      <div class="price">₪1,590</div>
+      <button>הוסף לסל</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 חנות מכונות כביסה | כל הזכויות שמורות</p>
+</footer>
+
+</body>
+</html>
